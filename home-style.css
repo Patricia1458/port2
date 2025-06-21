@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: url("pictures/david-becker-dMeEJRE18VI-unsplash.jpg") no-repeat center center/cover;
+  color: white;
+  overflow-x: hidden;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 2rem 9%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.logo {
+  font-size: 3rem;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+}
+
+nav a {
+  font-size: 1.8rem;
+  color: #a754ff;
+  margin-left: 3rem;
+  position: relative;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav a.active,
+nav a:hover {
+  color: #00bfff;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  left: 0;
+  bottom: -5px;
+  background-color: #00bfff;
+  transition: 0.3s;
+}
+
+nav a:hover::after,
+nav a.active::after {
+  width: 100%;
+}
+
+.home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 7rem 9% 2rem;
+}
+
+.home-content {
+  max-width: 700px;
+  text-align: left;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 3rem;
+  border-radius: 15px;
+}
+
+.home-content h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+
+.home-content h1 span {
+  color: #00bfff;
+}
+
+.home-content .typing-text {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+.home-content .typing-text span {
+  color: #a754ff;
+}
+
+.home-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+.social-icon {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.social-icon a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  background: transparent;
+  border: 2px solid #00bfff;
+  border-radius: 50%;
+  font-size: 2rem;
+  color: #00bfff;
+  text-decoration: none;
+  transition: 0.5s ease;
+}
+
+.social-icon a:hover {
+  background: #00bfff;
+  color: #000;
+  box-shadow: 0 0 20px #00bfff;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #00bfff;
+  padding: 1rem 2.5rem;
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
+  border-radius: 50px;
+  margin-top: 2rem;
+  transition: 0.3s ease;
+  border: 2px solid #00bfff;
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: #00bfff;
+  box-shadow: 0 0 20px #00bfff;
+}
